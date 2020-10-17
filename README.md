@@ -2,6 +2,8 @@
 
 Creates a query string based cache busting manifest to invalidate the cache of files on the browser.
 
+[![Build Status](https://travis-ci.com/khalyomede/gulp-revisioner.svg?branch=main)](https://travis-ci.com/khalyomede/gulp-revisioner) [![Maintainability](https://api.codeclimate.com/v1/badges/25062de656526aeac91c/maintainability)](https://codeclimate.com/github/khalyomede/gulp-revisioner/maintainability) [![TODOs](https://img.shields.io/endpoint?url=https://api.tickgit.com/badge?repo=github.com/khalyomede/gulp-revisioner)](https://www.tickgit.com/browse?repo=github.com/khalyomede/gulp-revisioner)
+
 ## Summary
 
 - [About](#about)

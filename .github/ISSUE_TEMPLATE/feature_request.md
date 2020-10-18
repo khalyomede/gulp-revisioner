@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea to help improve this plugin.
-title: ''
+title: ""
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 ## Description

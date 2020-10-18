@@ -43,6 +43,7 @@ yarn add --dev gulp-revisionner
 - [2. Customize the base path](#2-customize-the-base-path)
 - [3. Customize the name and the folder to write the manifest file](#3-customize-the-name-and-the-folder-to-write-the-manifest-file)
 - [4. Always override the manifest file with the new content](4-always-override-the-manifest-file-with-the-new-content)
+- [5. Customize the indent size of the written asset file](#5-customize-the-indent-size-of-the-written-asset-file)
 
 ### 1. Write a manifest file
 
@@ -171,6 +172,29 @@ const build = () =>
     .pipe(
       revisioner({
         eraseBeforeWriting: true,
+      })
+    )
+    .pipe(dest("public/css"));
+```
+
+### 5. Customize the indent size of the written asset file
+
+In this example, we will customize how many spaces to use when writting the asset file (useful if you need to follow your code conventions).
+
+By default, the indent size is set to 2.
+
+```js
+// gulpfile.js
+const { src, dest } = require("gulp");
+const sass = require("gulp-sass");
+const revisioner = require("gulp-revisioner");
+
+const build = () =>
+  src("assets/sass/**/*.sass")
+    .pipe(sass())
+    .pipe(
+      revisioner({
+        indentSize: 4,
       })
     )
     .pipe(dest("public/css"));

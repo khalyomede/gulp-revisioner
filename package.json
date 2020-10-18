@@ -51,6 +51,7 @@
         "lib/index.js",
         "lib/IOptions.d.ts",
         "lib/is-boolean.d.ts",
+        "lib/is-integer.d.ts",
         "lib/is-object.d.ts",
         "lib/is-string.d.ts",
         "lib/parse-options.d.ts",

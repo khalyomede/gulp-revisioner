@@ -18,6 +18,6 @@ _Describe the solution you would like to see, including code snippets if helpful
 
 _Any workaround you currently use in the mean time._
 
-**Additional context**
+## Additional context
 
 _Any useful information to help us._

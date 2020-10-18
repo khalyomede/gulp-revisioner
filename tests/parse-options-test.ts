@@ -10,6 +10,7 @@ describe("parseOptions()", () => {
             manifestDirectory: resolve(__dirname + "/../src"),
             manifestName: "manifest.json",
             eraseBeforeWriting: false,
+            indentSize: 2,
         });
     });
 
@@ -54,5 +55,14 @@ describe("parseOptions()", () => {
                 eraseBeforeWriting: 42,
             });
         }).to.throw("Expected options.eraseBeforeWriting to be a Boolean.");
+    });
+
+    it("should throw an exception if the options.indentSize is not a number", () => {
+        expect(() => {
+            throw parseOptions({
+                // @ts-ignore
+                indentSize: "42",
+            });
+        }).to.throw("Expected options.indentSize to be an integer Number");
     });
 });

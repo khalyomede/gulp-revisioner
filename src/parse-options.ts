@@ -1,5 +1,6 @@
 import IOptions from "./IOptions";
 import isBoolean from "./is-boolean";
+import isInteger from "./is-integer";
 import isObject from "./is-object";
 import isString from "./is-string";
 
@@ -45,6 +46,14 @@ export default (options: IOptions): IOptions|Error => {
         }
     } else {
         parsedOptions.eraseBeforeWriting = false;
+    }
+
+    if ("indentSize" in options) {
+        if (!isInteger(options.indentSize)) {
+            return new TypeError("Expected options.indentSize to be an integer Number.");
+        }
+    } else {
+        parsedOptions.indentSize = 2;
     }
 
     return parsedOptions;

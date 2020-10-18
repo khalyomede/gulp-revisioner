@@ -21,4 +21,9 @@ export default interface IOptions {
      * Override the existing manifest without trying to keep the old content.
      */
     eraseBeforeWriting?: boolean;
+
+    /**
+     * Number of spaces to use to indent the JSON content. Default: 2.
+     */
+    indentSize?: number;
 };

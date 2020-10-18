@@ -29,7 +29,7 @@ export default (file: IFile|string, options: IOptions): Error|null => {
 
     json[revisionKey] = revisionValue;
 
-    writeJsonToFile(manifestPath, json);
+    writeJsonToFile(manifestPath, json, options.indentSize);
 
     return null;
 };

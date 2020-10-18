@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Calling the plugin without options will no longer throw an error.
 - The JSON asset file will now correctly be written in the current directory where your gulpfile is working.
 
-## [0.1.0] 2020-09-27
+## [0.1.0] 2020-10-17
 
 ### Added
 

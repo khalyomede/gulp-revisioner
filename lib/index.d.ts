@@ -1,6 +1,6 @@
 import { Transform } from "stream";
 import IOptions from "./IOptions";
-declare const _default: (options: IOptions) => Transform;
+declare const _default: (options?: IOptions) => Transform;
 /**
  * Write file path with cache busting query strings into a JSON manifest file.
  *

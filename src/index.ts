@@ -13,7 +13,7 @@ import writeManifest from "./write-manifest";
  * @param {String} options.manifestDirectory=__dirname The directory to store the manifest on (default on the current directory).
  * @param {String} options.manifestName="manifest.json" The name of the manifest file.
  */
-export default (options: IOptions): Transform => {
+export default (options: IOptions = {}): Transform => {
     const parsedOptions = checkOptions(options);
 
     const transformStream = new Transform({objectMode: true});

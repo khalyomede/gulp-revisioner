@@ -12,6 +12,7 @@ import writeManifest from "./write-manifest";
  * @param {String} options.baseUrl="/" The base URL to prepend to the files path.
  * @param {String} options.manifestDirectory=__dirname The directory to store the manifest on (default on the current directory).
  * @param {String} options.manifestName="manifest.json" The name of the manifest file.
+ * @param {Number} indentSize=2 The size to use to indent the manifest file.
  */
 export default (options: IOptions = {}): Transform => {
     const parsedOptions = checkOptions(options);

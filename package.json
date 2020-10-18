@@ -1,6 +1,6 @@
 {
     "name": "gulp-revisioner",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Creates a query string based cache busting manifest to invalidate the cache of files on the browser.",
     "main": "lib/index.js",
     "repository": "https://github.com/khalyomede/gulp-revisioner",

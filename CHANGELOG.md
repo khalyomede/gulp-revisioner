@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New option `indentSize` to customize how many space to use to write on the asset file.
 
+### Fixed
+
+- Calling the plugin without options will no longer throw an error.
+
 ## [0.1.1] 2020-10-01
 
 ### Fixed

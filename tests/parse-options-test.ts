@@ -7,7 +7,7 @@ describe("parseOptions()", () => {
     it("should fill the with the default values", () => {
         expect(parseOptions({})).to.be.deep.equal({
             baseUrl: "/",
-            manifestDirectory: resolve(__dirname + "/../src"),
+            manifestDirectory: resolve(__dirname + "/../"),
             manifestName: "manifest.json",
             eraseBeforeWriting: false,
             indentSize: 2,

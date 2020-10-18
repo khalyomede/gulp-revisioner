@@ -13,6 +13,10 @@ export default {
         exports: "default"
     },
     external: [
-        "stream","fs","path","crypto"
+        "stream",
+        "fs",
+        "path",
+        "crypto",
+        "process",
     ]
 }

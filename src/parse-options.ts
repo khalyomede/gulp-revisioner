@@ -1,3 +1,4 @@
+import { cwd } from "process";
 import IOptions from "./IOptions";
 import isBoolean from "./is-boolean";
 import isInteger from "./is-integer";
@@ -29,7 +30,7 @@ export default (options: IOptions): IOptions|Error => {
             return new TypeError("Expected options.manifestDirectory to be a String.");
         }
     } else {
-        parsedOptions.manifestDirectory = __dirname;
+        parsedOptions.manifestDirectory = cwd();
     }
 
     if ("manifestName" in options) {
